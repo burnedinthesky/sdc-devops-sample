@@ -1,9 +1,9 @@
-/// <reference types="vitest" />
 import '@testing-library/jest-dom'
-import { expect } from 'vitest'
 
 declare module 'vitest' {
-  interface Assertion<T = any> extends jest.Matchers<void, T> {}
-  interface AsymmetricMatchersContaining extends jest.Matchers<void, any> {}
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  interface Assertion<T = unknown> extends jest.Matchers<void, T> {}
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  interface AsymmetricMatchersContaining extends jest.Matchers<void, unknown> {}
 }
 
