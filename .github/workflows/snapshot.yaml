@@ -111,7 +111,7 @@ jobs:
             -H "x-deploy-token: ${{ secrets.N8N_DEPLOY_TOKEN }}" \
             -d '{
               "source": {
-                "title": "Core System",
+                "title": "Sciedu Frontend",
                 "repo": "${{ github.repository }}",
                 "branch": "${{ github.head_ref || github.ref_name }}",
                 "commit": "${{ github.sha }}",
@@ -128,7 +128,7 @@ jobs:
               "setup": {
                 "inject_secret": {
                   "enable": true,
-                  "project": "core-system",
+                  "project": "Sciedu Frontend",
                   "environment": "snapshot",
                   "secrets": [
                     {
