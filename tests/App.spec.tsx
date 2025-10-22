@@ -61,6 +61,8 @@ describe('App', () => {
     const viteLink = links.find(link => link.getAttribute('href') === 'https://vite.dev')
     const reactLink = links.find(link => link.getAttribute('href') === 'https://react.dev')
 
+      console.log("Hi")
+
     expect(viteLink).toBeInTheDocument()
     expect(reactLink).toBeInTheDocument()
     expect(viteLink).toHaveAttribute('target', '_blank')
